@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastre-se</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="icon" href="/imagens/icone-jf.ico" type="image/x-icon">
+  <style>  
+  /* #freemelly */
+    
+    * {
+        padding: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #181818;
+    }
+
+    .container {
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, .212);
+    }
+
+    .form-image{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #383838;
+        padding: 1rem;
+    }
+
+    .form-image img{
+        width: 31rem;
+    }
+
+    .form {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #e4e4e4;
+        padding: 3rem;
+    }
+
+    .form-header {
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .login-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .login-button button {
+        border: none;
+        background: #ff7b00;
+        padding: 0.4rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .login-button button:hover {
+        background: #d84d0c;
+    }
+
+    .login-button button a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .form-header h1::after {
+        content: "";
+        display: block;
+        width: 7.5rem;
+        height: 0.3rem;
+        background-color: #ff7b00;
+        margin: 0 auto;
+        position: absolute;
+        border-radius: 10px;
+    }
+
+    .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.1rem;
+    }
+
+    .input-box input {
+        margin: 0.6rem 0;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 6px #ffffff56;
+    }
+
+    .input-box input:hover {
+        background-color: #eeeeee ;
+    }
+    
+    .input-box input:focus-visible {
+        outline: 1px solid #ff7b00;
+    }
+
+    .input-box label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #000000c0;
+    }
+
+    .input-box input::placeholder {
+        color: #000000be;
+    }
+
+    .continue-button button {
+        width: 100%;
+        margin-top: 2.5rem;
+        border: none;
+        background-color: #ff7b00;
+        padding: 0.62rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .continue-button button:hover {
+        background-color: #d84d0c;
+    }
+
+    .continue-button button a {
+        text-decoration: none;
+        font-size: 0.93rem;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    @media screen and (max-width:1330px) {
+
+        .form-image{
+            display: none;
+        }
+        .container {
+            width: 50%;
+        }
+        .form {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:1064px) {
+        .container {
+            width: 90%;
+            height: auto;
+        }
+        .input-group {
+            flex-direction: column;
+            overflow-y: scroll;
+            flex-wrap: nowrap;
+            max-height: 10rem;
+            padding-right: 5rem;
+        }
+    }
+
+    footer{
+        margin-top: 20px;
+        font-style: italic;
+        color: #ff7b00;
+        text-align: center;
+        display: flex;
+    }
+    </style>
+</head>
+<!--les go-->
+
+<body>
+    <section>
+        <div class="container">
+            <div class="form-image">
+                <img src="undraw_mobile_payments_re_7udl.svg" alt="cad">
+            </div>
+            <div class="form">
+                <form action="#">
+                    <div class="form-header">
+                      <div class="title">
+                        <h1>Cadastre-se</h1>
+                      </div>
+                      <div class="login-button">
+                        <button><a href="#">Entrar</a></button> <!--colocar o link da pagina de login-->
+                      </div>
+                    </div>
+                  <div class="input-group">
+        
+                    <div class="input-box">
+                        <label for="namecomplect">Nome completo</label>
+                            <input id="namecomplect" type="text"
+                            name="namecomplect" placeholder=" Digite seu nome completo" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                            <input id="email" type="email"
+                            name="email" placeholder=" Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                            <input id="password" type="password"
+                            name="password" placeholder=" Crie uma senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirm-password">Confirme sua senha</label>
+                            <input id="confirm-password" type="password"
+                            name="confirm-password" placeholder=" Digite sua senha" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <label for="dado-cnpj">CPF</label>
+                            <input id="dado-cnpj" type="number"
+                            name="dado-cnpj" placeholder=" Digite seu CPF" required>
+                    </div>
+                  </div>
+                  <div class="continue-button">
+                    <button><a href="# ">Cadastrar</a></button><!--colocar o link da pagina de login-->
+                  </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <strong>
+                <p>&copy;Jayzinn, 2023.</p>
+            </strong>
+        </footer>
+    </section>
+
+    <script src="script.js">
+        //this is the right time!
+    </script>
+
+</body>
+</html>

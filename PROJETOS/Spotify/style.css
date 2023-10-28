@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto bold", sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+}
+
+.cabecalho-link {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cabecalho-link a{
+    color: #fff;
+    font-size: 13px;
+}
+
+.cabecalho-link a:hover {
+    color: #1ed760;
+    transition: 0.3s all;
+}
+
+.logo {
+    padding-top: 1.5rem;
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 100px;
+    height: 35px;   
+}
+
+button {
+    margin-top: 10px;
+    color: #000;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 10px;
+    width: 150px;
+}
+
+.container-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.container-geral{
+    background-image: linear-gradient(to right, #da30b0, #931ace);
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.text h1 {
+    color: #fff;
+    font-weight: 800;
+}
+
+.text p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.box-one img{
+    width: auto;
+    height: 400px;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
